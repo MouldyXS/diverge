@@ -1,5 +1,7 @@
 # Diverge
 
+**English** | [Español](README.es.md)
+
 > **Public distribution.** This repository is an independent public distribution of Diverge v0.1.0-beta.1, prepared from the current state of a separate research repository. Historical commit identifiers, tags, backup locations and datasets mentioned in research documents refer to that private repository and are not part of this distribution. Internal research datasets and validation resources are not included. `CLAUDE.md`, cited in some historical documents, is a private project-context file and is not part of this distribution.
 
 Diverge is a local application, **in development**, for analyzing semantic similarity and divergence between Spanish words with a multilingual embedding model run on your own machine. It is also meant to study how far the model's distances correspond to human similarity ratings by speakers of Ecuadorian Spanish.
