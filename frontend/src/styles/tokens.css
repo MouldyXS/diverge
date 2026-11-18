@@ -1,0 +1,28 @@
+:root {
+  --text: #1f2430;
+  --text-secondary: #5b6475;
+  --background: #f6f7f9;
+  --surface: #ffffff;
+  --border: #dde1e7;
+  --accent: #0f6e78;
+  --accent-soft: #e6f2f3;
+  --accent-strong: #0b4f57;
+  --error: #b42318;
+  --warning: #b54708;
+  --success: #067647;
+
+  /* Matrix scale: both ends keep --text at WCAG AA, so values can be written on any cell. */
+  --scale-low: #e6f2f3;
+  --scale-high: #5e9aa1;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  --radius: 6px;
+  --border-width: 1px;
+  --font: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}

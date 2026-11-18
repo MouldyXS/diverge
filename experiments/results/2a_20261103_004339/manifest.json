@@ -1,0 +1,89 @@
+{
+  "phase": "2a",
+  "timestamp_utc": "2026-11-03T05:43:39.308295+00:00",
+  "model_id": "ibm-granite/granite-embedding-278m-multilingual",
+  "model_revision": "a9cb5338491faf32b73dd17b714a31821c021bbf",
+  "device": "cpu",
+  "model_dtype": "torch.float32",
+  "words": [
+    "casa",
+    "perro",
+    "mesa",
+    "árbol",
+    "niño",
+    "año",
+    "ano",
+    "camión",
+    "pingüino",
+    "corazón",
+    "guagua",
+    "chompa",
+    "chulla",
+    "palta",
+    "computadora",
+    "sí",
+    "si",
+    "él",
+    "el",
+    "papá",
+    "papa",
+    "xqzvbn",
+    "asdfgh",
+    "tarvelo",
+    "bicicleta",
+    "montaña",
+    "cuchara",
+    "música",
+    "libertad",
+    "quito",
+    "correr"
+  ],
+  "libraries": {
+    "python": "3.12.10",
+    "torch": "2.15.0+cpu",
+    "torch_cuda": null,
+    "sentence_transformers": "6.2.0",
+    "transformers": "5.22.1",
+    "huggingface_hub": "2.4.0",
+    "numpy": "2.5.4",
+    "torch_threads": 12
+  },
+  "git": {
+    "commit": "0032ced12a076531da34c99c75ad1370942c302e",
+    "dirty": false
+  },
+  "criteria_source": "docs/acceptance-criteria-2c.md section 3",
+  "results": {
+    "cpu_build": {
+      "pass": true,
+      "torch_cuda": null
+    },
+    "st_vs_reference": {
+      "pass": true,
+      "min_cosine": 0.9999999403953552,
+      "worst_word": "montaña",
+      "criterion": 0.99999,
+      "st_norm_min": 0.9999998807907104,
+      "st_norm_max": 1.0000001192092896,
+      "st_vectors_l2_normalized": true
+    },
+    "attention": {
+      "pass": true,
+      "sentence_transformers": "sdpa",
+      "reference": "sdpa"
+    },
+    "reproducibility": {
+      "pass": true,
+      "max_abs_diff": {
+        "same_session_repeat": 0.0,
+        "reversed_order": 4.470348358154297e-08,
+        "one_word_per_call": 5.960464477539063e-08,
+        "two_half_batches": 4.0978193283081055e-08,
+        "fresh_process": 0.0
+      },
+      "tolerance": 1e-06,
+      "child_returncode": 0
+    }
+  },
+  "overall_pass": true
+}

@@ -1,0 +1,22 @@
+# Dependencies of the Granite embedding PoC (Phase 2a extension), exact versions that produced experiments/results/embedding_poc_2a.
+# Python 3.12 on Windows (win_amd64), CPU only. Install into the project's own virtual environment (.venv), never into ComfyUI / Stability Matrix.
+#
+#   .venv\Scripts\python.exe -m pip install -r experiments\embedding_poc\requirements-poc.txt
+#
+# torch: the version that was installed and tested is 2.15.0+cpu, which comes from the official PyTorch CPU wheel index
+# (checked 2026-11-04: torch-2.15.0+cpu-cp312-cp312-win_amd64.whl is listed there). PyPI also lists a plain
+# torch-2.15.0 wheel for the same platform; it is a different file and was NOT tested here. The "+cpu" pin and the extra index
+# below select the tested build. All other packages come from PyPI.
+#
+# NOT YET TESTED: installing this file into an empty virtual environment. The versions record what was installed
+# in the existing .venv; the only check done is that this file parses and matches that environment (pip install --dry-run).
+#
+# These versions record the environment that produced the Phase 2a results; they are not a frozen specification for the project.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.15.0+cpu
+transformers==5.22.1
+sentence-transformers==6.2.0
+numpy==2.5.4
+huggingface_hub==2.4.0
+tokenizers==0.23.3
+pytest==9.2.0

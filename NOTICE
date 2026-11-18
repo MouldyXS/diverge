@@ -1,0 +1,13 @@
+Diverge
+
+Original material of this repository: no license is granted for it at
+this time, and no general permission to reuse, modify or redistribute it
+is given (see "Repository license" in docs/decisions.md). A license may
+be added later.
+
+This repository does not include or redistribute third-party software
+packages, the embedding model weights, or the data files of the lexical
+resources it consulted. Those keep their own licenses and notices, recorded
+in THIRD_PARTY_NOTICES.md and docs/third-party-review.md.
+
+This file is a record of the project's current state, not legal advice.

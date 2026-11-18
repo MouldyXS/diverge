@@ -1,0 +1,31 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+node_modules/
+frontend/dist/
+
+# environment files
+.env
+.env.*
+!.env.example
+
+# model and library caches
+.cache/
+hf_cache/
+*.safetensors
+*.bin
+
+# experiment outputs (keep manifests and summaries only)
+experiments/results/**
+!experiments/results/**/
+!experiments/results/**/manifest.json
+!experiments/results/**/summary.md
+
+# wordfreq outputs, including aggregate manifests, stay out of Git
+experiments/results/wordfreq_*/
+
+# local tool state
+.claude/settings.local.json
